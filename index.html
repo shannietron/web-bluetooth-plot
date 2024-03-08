@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Temp Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-adapter-moment/1.0.0/chartjs-adapter-moment.js"></script>
+    <div id="currentTempText"></div>
+    <style>
+        canvas {
+            max-width: 1500px;
+            max-height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temp Plot</h1>
+    <button id="connectButton">Connect to ESP32</button>
+    <button id="stopButton">Stop</button>
+    <button id="downloadButton">Download CSV</button>
+    <canvas id="tempChart"></canvas>
+
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
